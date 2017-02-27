@@ -1,0 +1,11 @@
+* multiple features
+** variables
+*** x 下标表示第几个 featura,上标 表示第几组数据
+*** x_0 等于 1 
+* feature scaling
+** mean normalization
+   x1 = (x1 - mean(x1))/(max(x1)-min(x1))
+* chose good å
+  if å too small,slow convergence.
+  if å too large,cost function may not decrease on every iteration,which mean not converge.
+
