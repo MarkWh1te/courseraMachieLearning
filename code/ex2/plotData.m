@@ -17,8 +17,8 @@ pos_ex1 = X(pos,1)
 pos_ex2 = X(pos,2)
 neg_ex1 = X(neg,1)
 neg_ex2 = X(neg,2)
-plot(pos_ex1,pos_ex2,'k+');
-plot(neg_ex1,neg_ex2,'ko');
+plot(pos_ex1,pos_ex2,'k+','LineWidth',2,'MarkerSize',7);
+plot(neg_ex1,neg_ex2,'ko','MarkerFaceColor','y','MarkerSize',7);
 
 
 

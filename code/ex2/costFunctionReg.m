@@ -17,10 +17,17 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 
+prediction = sigmoid(X * theta);
+
+part_theta = theta(2:length(theta))
+
+J = ((1/m) * sum(-y'*log(prediction)-(1-y)'*log(1-prediction)))+((lambda/(2*m)) * sum(part_theta.*part_theta)) ;
 
 
+## grad = (1/m)*X'*(prediction-y);
+grad = (1 / m) * sum( X .* repmat((sigmoid(X*theta) - y), 1, size(X,2)) );
 
-
+grad(:,2:length(grad)) = grad(:,2:length(grad)) + (lambda/m)*theta(2:length(theta))';
 
 % =============================================================
 
