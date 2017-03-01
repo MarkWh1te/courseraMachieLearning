@@ -28,13 +28,15 @@ X = [ones(m, 1) X];
 %       max element, for more information see 'help max'. If your examples 
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
-%       
 
 
-
-
-
-
+for i = 1:m
+  RX = repmat(X(i,:),num_labels,1);
+  RX = RX .* all_theta;
+  SX = sum(RX,2);
+  [val, index] = max(SX);
+  p(i) = index;
+end
 
 % =========================================================================
 
