@@ -1,0 +1,15 @@
+* skewed classes
+** Precision/Recall
+|               | actual class   |                |
+| predict class | 1              | 0              |
+|             1 | True positive  | False positive |
+|             0 | False negative | True negative  |
+
+Precision = True positive/(True positive+False positive)
+Recall = True positive/(True positive+False negative)
+
+test grid
+|               | actual class       |                     |
+| predict class | 1                  | 0                   |
+|             1 | True positive 0.99 | False positive 0.01 |
+|             0 | False negative 0   | True negative    0  |
