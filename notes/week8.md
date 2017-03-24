@@ -2,7 +2,7 @@
 
 ### clustering
 
-*. K-means
+* K-means
 
   * iterative
   * two cluster centroid blue and red(random initialize)
@@ -30,14 +30,14 @@
 
   * K-means for no separated cluster
   
-*. optimization objective
+* optimization objective
 
   * min J(c(1),c(2)....,c(m),u1,....uk)
     
   * cluster assignment step => min J(c(1),c(2),...,c(m))
 
 
-*. random initialize
+* random initialize
 
   * K < m
     random pick K training examples
@@ -59,7 +59,7 @@
         pick  clustering that gave lowest cost J(c(1),.....c(m),u1,....uk)  
     
     
-*. Choosing the number of cluster(K)  
+* Choosing the number of cluster(K)  
   
   * manually is main solution
 
@@ -77,13 +77,13 @@
     
 ### (Dimensionality Reduction)Principal Components Analysis
 
-*. motivation 
+* motivation 
 
   * data  compression
   
   * data visualization
   
-*. Principal Components Analysis
+* Principal Components Analysis
 
   * Formulation 
     project can on different line
@@ -92,23 +92,28 @@
     project can on different line
     reduce from n-d to k-d :Find a direction (k vector u(1) .... u(k) belongs to  R(n)) onto which to project the data so mini the project error
  
-*. PCA is not linear regression
+* PCA is not linear regression
   
   linear regression mini vertical distance between a line and x
   
   PCA  mini projection of x on line
   
-*. Principal Components Analysis Algorithm 
+* Principal Components Analysis Algorithm 
+
   * Data preprocessing
-  
     reduce data from n-d to k-d
-    1. compute "covariance matrix"
+    
+    * compute "covariance matrix"
+    
       Sigma = (1/m)*sigma(n,i=1)(x(i))(x(i))T
       
-    2. compute "eigenvectors" of matrix Sigma
-    octave function
-    [U,S,V] = svd(Sigma);
-    eig(Sigma)
+    * compute "eigenvectors" of matrix Sigma
+    
+      octave function
+    
+      [U,S,V] = svd(Sigma);
+    
+      eig(Sigma)
       
     Sigma is a n*n matrix  
     
@@ -132,7 +137,7 @@
     
     z = U-reduce'*x;
   
-*. Applying PCA
+* Applying PCA
     
   * Reconstruction from   compressed Representation
   
