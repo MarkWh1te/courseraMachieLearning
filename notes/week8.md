@@ -1,8 +1,8 @@
-### unsupervised learning
+# unsupervised learning
 
-## clustering
+### clustering
 
-1. K-means
+*. K-means
 
   * iterative
   * two cluster centroid blue and red(random initialize)
@@ -30,14 +30,14 @@
 
   * K-means for no separated cluster
   
-2. optimization objective
+*. optimization objective
 
   * min J(c(1),c(2)....,c(m),u1,....uk)
     
   * cluster assignment step => min J(c(1),c(2),...,c(m))
 
 
-3. random initialize
+*. random initialize
 
   * K < m
     random pick K training examples
@@ -59,7 +59,7 @@
         pick  clustering that gave lowest cost J(c(1),.....c(m),u1,....uk)  
     
     
-3. Choosing the number of cluster(K)  
+*. Choosing the number of cluster(K)  
   
   * manually is main solution
 
@@ -75,15 +75,15 @@
   * another way 
     reality perspective 
     
-# (Dimensionality Reduction)Principal Components Analysis
+### (Dimensionality Reduction)Principal Components Analysis
 
-1. motivation 
+*. motivation 
 
   * data  compression
   
   * data visualization
   
-2. Principal Components Analysis
+*. Principal Components Analysis
 
   * Formulation 
     project can on different line
@@ -92,13 +92,13 @@
     project can on different line
     reduce from n-d to k-d :Find a direction (k vector u(1) .... u(k) belongs to  R(n)) onto which to project the data so mini the project error
  
-3. PCA is not linear regression
+*. PCA is not linear regression
   
   linear regression mini vertical distance between a line and x
   
   PCA  mini projection of x on line
   
-4. Principal Components Analysis Algorithm 
+*. Principal Components Analysis Algorithm 
   * Data preprocessing
   
     reduce data from n-d to k-d
@@ -132,7 +132,7 @@
     
     z = U-reduce'*x;
   
-3. Applying PCA
+*. Applying PCA
     
   * Reconstruction from   compressed Representation
   
