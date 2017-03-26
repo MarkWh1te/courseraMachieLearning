@@ -3,7 +3,7 @@
 %
 %  Instructions
 %  ------------
-% 
+%
 %  This file contains code that helps you get started on the
 %  exercise. You will need to complete the following functions:
 %
@@ -19,7 +19,7 @@
 clear ; close all; clc
 
 %% =========== Part 1: Loading and Visualizing Data =============
-%  We start the exercise by first loading and visualizing the dataset. 
+%  We start the exercise by first loading and visualizing the dataset.
 %  The following code will load the dataset into your environment and plot
 %  the data.
 %
@@ -27,7 +27,7 @@ clear ; close all; clc
 % Load Training Data
 fprintf('Loading and Visualizing Data ...\n')
 
-% Load from ex5data1: 
+% Load from ex5data1:
 % You will have X, y, Xval, yval, Xtest, ytest in your environment
 load ('ex5data1.mat');
 
@@ -43,8 +43,8 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% =========== Part 2: Regularized Linear Regression Cost =============
-%  You should now implement the cost function for regularized linear 
-%  regression. 
+%  You should now implement the cost function for regularized linear
+%  regression.
 %
 
 theta = [1 ; 1];
@@ -101,7 +101,7 @@ pause;
 %  Next, you should implement the learningCurve function. 
 %
 %  Write Up Note: Since the model is underfitting the data, we expect to
-%                 see a graph with "high bias" -- slide 8 in ML-advice.pdf 
+%                 see a graph with "high bias" -- Figure 3 in ex5.pdf 
 %
 
 lambda = 0;
@@ -196,7 +196,7 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% =========== Part 8: Validation for Selecting Lambda =============
-%  You will now implement validationCurve to test various values of 
+%  You will now implement validationCurve to test various values of
 %  lambda on a validation set. You will then use this to select the
 %  "best" lambda value.
 %
