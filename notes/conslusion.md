@@ -5,6 +5,7 @@
   - logistic regression
   - neural networks
   - SVMS
+  
 ## Unsupervised Learning
   - K-means
   - PCA
@@ -12,7 +13,7 @@
   
 ## special applications/special topics
   Recommender Systems, large scale machine Learning
-
+  
 ## advice on building a machine learning system
   - Bias/Variance
   - regularization
